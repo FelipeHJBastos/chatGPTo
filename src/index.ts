@@ -1,11 +1,11 @@
 import { Application, oakCors, config } from "../deps.ts";
 import router from "./router.ts";
 
-const host = Deno.env.get("APP_HOST") || "localhost";
-const port = Deno.env.get("APP_PORT") || 8000;
-
 // Necessário para carregar as variáveis de ambiente
 await config({export: true});
+
+const host = Deno.env.get("APP_HOST");
+const port = Deno.env.get("APP_PORT");
 
 const app = new Application();
 
