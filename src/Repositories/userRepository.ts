@@ -1,4 +1,4 @@
-// src/repositories/songsRepository.ts
+
 export const GetUser = () => {
     // Implement database interaction here
     const user = {
