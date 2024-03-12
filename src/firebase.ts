@@ -31,5 +31,5 @@ const AutorizaFirebase = async (context) => {
 }
    
 
-export default {firebaseRoutes, AutorizaFirebase};
+export default firebaseRoutes; {AutorizaFirebase};
 
