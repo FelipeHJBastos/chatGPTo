@@ -1,7 +1,7 @@
-import { Router } from "../../deps.ts";
+import { oak } from "../../deps.ts";
 import { ReturnUser } from "../Controllers/userController.ts";
 
-const userRoutes = new Router();
+const userRoutes = new oak.Router();
 
 userRoutes.get("/get", (context) => {
     context.response.body = ReturnUser();

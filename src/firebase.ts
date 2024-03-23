@@ -1,6 +1,6 @@
-import { Router } from "../deps.ts";
+import { oak } from "../deps.ts";
 
- const firebaseRoutes = new Router();
+ const firebaseRoutes = new oak.Router();
 
  firebaseRoutes.get("/get", async (context) => {
     try {
@@ -16,7 +16,7 @@ import { Router } from "../deps.ts";
 });
 
 
-const AutorizaFirebase = async (context) => {
+const FirebaseAuth = async (context) => {
     try {
         const response = await fetch("https://deno-server-4ebc2-default-rtdb.firebaseio.com/", {
           method: "POST",
@@ -31,5 +31,5 @@ const AutorizaFirebase = async (context) => {
 }
    
 
-export default firebaseRoutes; {AutorizaFirebase};
+export default firebaseRoutes; {FirebaseAuth};
 

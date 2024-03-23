@@ -1,7 +1,8 @@
 import { token } from "./Models/authToken.ts";
-import { AutorizaFirebase } from "./firebase.ts";
+import FirebaseAuth from "./firebase.ts";
 
-const verificaAutorização = () => {
-    AutorizaFirebase()
-    
+const VerifyAuthorization = () => {
+    FirebaseAuth()
 };
+
+export default VerifyAuthorization;
